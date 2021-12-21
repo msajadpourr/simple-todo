@@ -1,0 +1,17 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://cdn.dribbble.com/users/235449/screenshots/2942467/drib1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+     & > div {
+         height: 100vh;
+     }
+     .taskWraper{
+         background-color: #fff;
+         border-radius: 1.2rem;
+         box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+         padding: 4rem 4rem 4rem 5rem;
+     }
+}

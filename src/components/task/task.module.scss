@@ -1,0 +1,53 @@
+.task{
+    text-align: left;
+    font-size: 1.6rem;
+    padding: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: .6rem;
+    position: relative;
+
+    &:hover{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    label{
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 4px;
+            z-index: 1;
+            cursor: pointer;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: -2rem;
+            top: 13px;
+            width: .7rem;
+            height: 3.5rem;
+            border-radius: .5rem;
+        }
+        &.high::before{
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(244,9,67,1) 0%, rgba(228,106,136,1) 100%);
+        }
+        &.medium::before{
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(244,9,67,1) 0%, rgba(228,106,136,1) 100%);
+        }
+        &.low::before{
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(227,221,170,1) 0%, rgba(235,210,65,1) 100%);
+        }
+        &.none::before{
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(229,229,229,1) 0%, rgba(203,203,203,1) 100%);
+        }
+
+    }
+}
